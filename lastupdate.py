@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+# Adapted code provided by the sphinx-dev community [0] to produce a plugin to
+# provide the last updated date for each file in YYYY-mm-dd format instead of a
+# single date for the entire project.
+# [0]: https://groups.google.com/forum/#!topic/sphinx-dev/6G8TWtIVN14
+
 import datetime
 import os
 import subprocess
@@ -6,8 +11,8 @@ import subprocess
 
 def _get_last_updated(app, pagename):
     """
-    Pull the date from a git log call that represents the date a documentation
-    page was last updated.
+    Pull the date from a git log call that represents the date a file was last
+    updated.
     """
     last_updated = None
     src_file = app.builder.env.doc2path(pagename)
