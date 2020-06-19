@@ -37,7 +37,7 @@ def html_page_context(app, pagename, templatename, context, doctree):
 def setup(app):
     app.connect('html-page-context', html_page_context)
     return {
-        'version': '0.3.0',
-        'parallel-read-safe': True,
-        'parallel-write-safe': True
+        'version': '1.0.0',
+        'parallel_read_safe': True,
+        'parallel_write_safe': True
     }

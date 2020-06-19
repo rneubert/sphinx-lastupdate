@@ -18,7 +18,7 @@ URL = 'https://github.com/rneubert/sphinx_lastupdate'
 EMAIL = 'rbneubert@gmail.com'
 AUTHOR = 'Rachel Neubert'
 REQUIRES_PYTHON = '>=2.7.0'
-VERSION = '0.3.0'
+VERSION = '1.0.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
